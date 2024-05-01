@@ -1,0 +1,89 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Stk 21</title>
+	<meta name="viewport" content="width=500"> <!-- ajustement dimensions -->
+	<link href="styles21.css" rel="stylesheet">
+  <link rel="apple-touch-icon" href="apple_icon.png">
+	<script src="script21.js" defer ></script>
+</head>
+
+<body>
+	
+ <div class="cadre">
+   
+   <!-- zone des affichages -->
+   
+  <div class="a" id="areg"></div> <!-- cadre des registres -->
+  
+  <!-- registres -->
+   <div class="aregistre" id="amem">0</div> 
+   <div class="aregistre" id="az">0</div> 
+   <div class="aregistre" id="ay">0</div> 
+   <div class="aregistre" id="ax">0</div>  
+  
+  <!-- etiquettes -->
+  <div class="e" id="emem">m</div>
+  <div class="e" id="ez">z</div>
+  <div class="e" id="ey">y</div>
+  <div class="e" id="ex">x</div>
+  
+  <!-- modes -->
+  <div class="amode" id="ainfo"></div>
+  <div class="amode" id="ajaune"></div>
+  <div class="amode" id="astk"><a style="text-decoration:none"href="stk21_op_manual.html">Stk 21- handbook</a></div>
+  <div class="amode" id="adegrad">DEG</div>
+  <div class="amode" id="afixsci">FIX</div>
+  <div class="amode" id="adplusmoins">2</div>
+  
+   
+	
+  <!-- zone des boutons -->
+  
+  <button onclick="boutonJaune('bj')" class="bjaune" id="bj"></button>
+     
+  <button onclick="boutonGris('bdeg')" class="bgris" id="bdeg">DEG<br><span class="flag">RAD</span></a></button>
+  <button onclick="boutonGris('bdmoins')" class="bgris" id="bdmoins">D-<br><span class="flag">FIX</span></button>
+  <button onclick="boutonGris('bdplus')" class="bgris" id="bdplus">D+<br><span class="flag">SCI</span></button>
+  <button onclick="boutonGris('bcstk')" class="bgris" id="bcstk">CSTK<br><span class="flag">ENG</span></button>
+ 
+  <button onclick="boutonGris('benter')" class="bgris" id="benter">ENTER</button>
+  <button onclick="boutonGris('bpi')" class="bgris" id="bpi">PI</button>
+ 
+  <button onclick="boutonGris('bdup')" class="bgris" id="bdup">DUP<br><span class="flag">CHS</span></button>
+  <button onclick="boutonGris('bsto')" class="bgris" id="bsto">STO<br><span class="flag">RCL</span></button>
+  <button onclick="boutonGris('bswap')" class="bgris" id="bswap">SWAP<br><span class="flag">DROP</span></button>
+  
+  <button onclick="boutonBleu('bsin')" class="bbleu" id="bsin">SIN<br><span class="flag">ASIN</span></button>
+  <button onclick="boutonBleu('bcos')" class="bbleu" id="bcos">COS<br><span class="flag">ACOS</span></button>
+  <button onclick="boutonBleu('btan')" class="bbleu" id="btan">TAN<br><span class="flag">ATAN</span></button>
+  <button onclick="boutonBleu('blog')" class="bbleu" id="blog">LOG<br><span class="flag">x^y</span></button> 
+  <button onclick="boutonBleu('bln')" class="bbleu" id="bln">LN<br><span class="flag">e^x</span></button>
+  <button  onclick="boutonBleu('bsqrt')" class="bbleu" id="bsqrt">SQRT<br><span class="flag">x^2</span></button> 
+  <button onclick="boutonBleu('bdiv')" class="bbleu" id="bdiv">/</button> 
+  <button onclick="boutonBleu('bminu')" class="bbleu" id="bminu">-</button>
+  <button onclick="boutonBleu('bplus')" class="bbleu" id="bplus">+</button>
+  <button onclick="boutonBleu('bmul')" class="bbleu" id="bmul">x</button> 
+  
+  <button onclick="boutonBlanc('b7')" class="bblanc" id="b7">7</button>
+  <button onclick="boutonBlanc('b8')" class="bblanc" id="b8">8</button>
+  <button onclick="boutonBlanc('b9')" class="bblanc" id="b9">9</button>
+  <button onclick="boutonBlanc('b4')" class="bblanc" id="b4">4</button>
+  <button onclick="boutonBlanc('b5')" class="bblanc" id="b5">5</button>
+  <button onclick="boutonBlanc('b6')" class="bblanc" id="b6">6</button>
+  <button onclick="boutonBlanc('bc')" class="bblanc" id="bc">C</button>
+  <button onclick="boutonBlanc('b1')" class="bblanc" id="b1">1</button>
+  <button onclick="boutonBlanc('b2')" class="bblanc" id="b2">2</button>
+  <button onclick="boutonBlanc('b3')" class="bblanc" id="b3">3</button>
+  <button onclick="boutonBlanc('bmoins')" class="bblanc" id="bmoins">-</button>
+  <button onclick="boutonBlanc('b0')" class="bblanc" id="b0">0</button>
+  <button onclick="boutonBlanc('bpoint')" class="bblanc" id="bpoint">.</button>
+  <button onclick="boutonBlanc('be')" class="bblanc" id="be">E</button>
+   
+ </div>
+
+</body>
+
+</html>
