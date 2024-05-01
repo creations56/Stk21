@@ -1,0 +1,188 @@
+<!-- <!DOCTYPE html> -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Stk 21 operation manual</title>
+    
+<style>
+body {
+  text-align: left;
+  font-size: 20px;
+  line-height: 35px;
+}
+k
+.gris{
+  background-color: #dddddd;
+  padding: 10px;
+}
+.centered{
+  text-align: center;
+}
+.left{
+  text-align: left;
+}
+em{
+  color: #444444;
+}
+.cg{ border: 1px solid black; border-radius: 5px; padding: 5px;font-weight: bold ; background-color: #888888 ; color: #ffffff;}
+.cgj{ border: 1px solid black; border-radius: 5px; padding: 5px;font-weight: bold ; background-color: #888888 ; color: #FEE329;}
+.cgr{ border: 1px solid black; border-radius: 5px; padding: 5px;font-weight: bold ; background-color: #888888 ; color: red;}
+.cb{ border: 1px solid black; border-radius: 5px; padding: 5px;font-weight: bold ; background-color: #3392FF ; color: #ffffff;}
+.cbj{ border: 1px solid black; border-radius: 5px; padding: 5px;font-weight: bold ; background-color: #3392FF ; color: #FEE329;}
+.cw{ border: 1px solid black; border-radius: 5px; padding: 5px;font-weight: bold ; background-color: #ffffff ; color: #000000;}
+.cwr{ border: 1px solid black; border-radius: 5px; padding: 5px;font-weight: bold ; background-color: #ffffff ; color: red;}
+.cj{ border: 1px solid black; border-radius: 5px; padding: 5px;font-weight: bold ; background-color: #FEE329 ; color: #FEE329;}
+.vert { font-weight: bold ; background-color: transparent;color: #248f24;}
+.rouge { font-weight: bold ; background-color: transparent;color: red;}
+</style>
+</head>
+
+<body>
+  
+<div class="centered">
+<h1> 
+Stk 21 operation manual<br>
+<br>
+</h1>
+<img src="images/Stk21.jpeg" alt="stk11" width="300"/><br>
+<a href="index.html">Back to Stk 21</a>
+<br><br>
+    
+
+</div>
+
+<div class='left'>
+<br />
+<h2>The Reverse Polish Notation</h2>
+Stk 21 is an "on line" calculator which does mathematical calculations using the Reverse Polish Notation (RPN), which means that it uses a "computation stack" (registers referenced as <em>x-register, y-register, z-register</em>) to perform computational operations.<br />
+This specific calculation methodology doesn't require the usual, but complex, bracket groups to define the calculation hierarchy. Calculations are therefore carried out quickly and smoothly.
+Althought the RPN has been invented by the polish mathematician <b>Jan Łukasiewicz</b> in 1924, it has been widely implemented in the Hewlett Packard pocket calculators' starting in the 1970's. <br>More informations on the old HP calculators are available here : <a href="https://www.hpmuseum.org">https://www.hpmuseum.org</a>.<br>
+<br /><br />
+
+When using RPN you first enter the numbers used for the calculation in the stack, then you perform the operation.
+For example if you want to add 78 to 56, you have to :<br />
+- key in <span class="cw">5</span> and <span class="cw">6</span>. Press the <span class="cg">ENTER</span> key to finalize the entry. The number in x-register is now <b>56</b><br />
+- key in <span class="cw">7</span> and <span class="cw">8</span>. Press the <span class="cg">ENTER</span> key again. This will move up automatically the 56 value in the y-register, and the x-register now displays <b>78 </b><br />
+- press the <span class="cb">+</span> key. This will add the number in y-register to the number in x-register. The x-register will therefore display the result ie. <b>134</b><br />
+
+
+<div class='left'>
+
+<h2>The display area</h2>
+This area includes :
+  <ul>
+    <li>the stack area which includes the computation registers named x-register, y-register, z-register</em> and the memory register named mem-register<center><img src="images/registres.jpeg" alt="display" width="400"/></center>
+    <li>The modes area shows the display of the selected modes, and the information display <br /> 
+      <center><img src="images/modes1.jpeg" alt="display" width="400"/></center>
+      <center><img src="images/modes2.jpeg" alt="display" width="400"/></center>
+      </li>
+  </ul>  
+  
+From right to left the informations displayed are the followings :
+  <ul>
+  <li> a yellow circle that shows that the yellow key was pressed, therefore the bottom function of keys activated.</li>
+  <li> the angle mode which can be <span class="vert">DEG</span> for degree or <span class="vert">RAD</span> for radian</li>
+  <li> the display mode which can be <span class="vert">FIX</span> for normal display or <span class="vert">SCI</span> for scientific display </li>
+  <li> the number of displayed decimals, from <span class="vert">0</span> to <span class="vert">8</span></li>
+  <li> the information display which shows warning messages : <span class="rouge">error</span> when a calculation error occurs (for example divided by 0), <span class="rouge">	&#10132SCI</span> when the number is too large to be displayed in the FIX mode, and the SCI mode is automaticaly activated</li>
+  </ul>  
+</div>
+
+
+<h2>The keyboard area</h2>
+
+<div class='centered'>
+   <img src="images/clavier.jpeg" alt="keyboard" width="80%"/>
+</div>
+<div class='left'>
+  <br />
+  The keys are organized in 4 main categories:
+  <ul>
+    <li>the yellow key which is used to select the bottom function of some keys </li>
+    <li>the grey keys which are related to stack and memory manipulations, display modes... </li>
+    <li>the blue keys which are used to perform mathematical operations </li>
+    <li>the white keys, including the figures from 0 to 9, the decimal point, the minus sign... that is to says the ones used to key in a new number</li> 
+  </ul>
+</div>
+
+<div class="left">
+  <h3>The yellow key</h3>
+  <span class='cj'>0000</span> is used to select functions, written in yellow color and located at the bottom of some keys.</br> For example to select the CHS function you have to press first the <span class='cj'>0000</span> key than the <img src="images/DUP_CHS.jpeg" alt="keyboard" width="80"/> one
+</div>
+
+
+
+<div class='left'>
+  <h3>The grey keys</h3>
+  <span class='cg'>DEG</span> for degree. All trigonometric calculations will be done using the degree unit<br />
+  <span class='cgj'>RAD</span> for radian. All trigonometric calculations will be done using the radian unit<br />
+  <span class='cg'>FIX</span> for fixed mode. Set the fixed mode where numbers are represented directly, without exponent.<br />Notice : some numbers, big ones, or with lot of displayed decimals, could be to large to be displayed (more than 16 characters). When this happen the calculator will automatically move to the scientific mode. A warning message will be displayed in the information display<br/>
+  <span class='cgj'>SCI</span> for scientific mode. Number are displayed with a mantissa and an exponent. Example: 123.45 is displayed as 1.23e+2<br />
+
+  <span class='cg'>D+</span> for decimal +. Increase the number of displayed decimals by one. <br>Notice that the number of decimals is limited to 8<br />
+  <span class='cgj'>D-</span> for decimal -. Decrease the number of displayed decimals by one. <br>Notice that the minimum number of decimals is 0<br /> 
+  <span class='cgr'>CSTK</span> for clear stack. All stack registers and the memory register are set to 0<br />
+  <br>
+  
+  <span class='cg'>DUP</span> for duplicate. The number in y-register is moved to the z-register, and the number in y-register is set to the number in x-register <br /> 
+  <span class='cgj'>CHS</span> for change sign. The number x, in x-register is replaced by -x <br />
+  <span class='cg'>SWAP</span> for swap. The number in x-register and the number in y-register are swapped<br />
+  <span class='cgj'>DROP</span> for dropping. The stack is moved down: the number in x-register is set to the number in y-register. Then the number in y-register is set to the number in z-register. Finally the number in z-register is set to 0. <br>Notice that the original number in the x-register is lost<br />  
+  <span class='cg'>ENTER</span> finalize the entering process of a new number in the x-register register. <br />
+  <br>
+  <span class='cg'>STO</span> for store. The current number in the x-register is stored in the memory register. <br />Notice : storing a value in the memory doesn't erase it from the x-register<br />
+   <span class='cgj'>RCL</span> for recall. The stack is moved up and the current number in the mem-register is stored in the x-register.<br />Notice: recalling a value from memory doesn't erase it from the memory register<br />
+  
+
+
+</div>
+
+<div class='left'>
+   <h3>The blue keys</h3>
+   
+    <span class='cb'>LN</span> for neper logarithm. The number in x-register (x) is replaced by neper logarithm(x).<br />Notice: if the number in x-register (x) is = 0 or < 0,  a warning is set in the information display and the operation is not done<br />
+   <span class='cbj'>e^x</span> for exponential. Raises e (2.718 ...) to power of value in x-register. The number in y-register is replaced by the number in z-register. The number in z-register is set to 0. <br />Notice: if the results exceed the maximum number accepted by the calculator, which is 9.99999999 e+99, a warning is set in the information display and the operation is not done
+   <br />
+   <span class='cb'>LOG</span> for logarithm to base 10. The number in x-register (x) is replaced by logarithm(x) in base 10.<br />Notice: if the number in x-register(x) = 0 < 0, a warning is set in the information display and the operation is not done.<br />
+   <span class='cbj'>x^y</span> for power. Raises the number in x-register (x) to power of value in y-register (y). The number in x-register (x) is replaced by (x^y). The number in y-register is replaced by the number in z-register. The number in z-register is set to 0. <br />Notice: if the results exceed the maximum number accepted by the calculator, which is 9.99999999 e+99, a warning is set in the information display and the operation is not done <br />
+<br>
+
+   <span class='cb'>SIN</span> for sinus. The number in the x-register (x) is replaced by sinus(x). If the <strong>DEG</strong> mode is set, the number in x-register will be considered in degrees. If the <strong>RAD</strong> mode is set, the number in x-register will be considered in radians<br />
+    
+   <span class='cbj'>ASIN</span> for arcsinus. The number in x-register (x) is replaced by arcsinus(x). The result value will be in degrees if the <strong>DEG</strong> mode is set, in radians if the <strong>RAD</strong> mode is set.<br />Notice: if number in x-register (x) > 1 or < -1  a warning is set in the information display and the operation is not done.<br />
+   
+   
+   <span class='cb'>COS</span> for cosinus. The number in the x-register (x) is replaced by cosinus(x). If the <strong>DEG</strong> mode is set, the number in x-register will be considered in degrees. If the <strong>RAD</strong> mode is set, the number in x-register will be considered in radians<br />
+      
+   <span class='cbj'>ACOS</span> for arccos. The number in x-register (x) is replaced by arccosinus(x). The result value will be in degrees if the <strong>DEG</strong> mode is set, in radians if the <strong>RAD</strong> mode is set.<br />Notice: if number in x-register (x) > 1 or < -1  a warning is set in the information display and the operation is not done.<br />
+   
+   <span class='cb'>TAN</span> for tangent. The number in x-register (x) is replaced by tangent(x). If the <strong>DEG</strong> mode is set, the number in x-register will be considered in degrees. If the <strong>RAD</strong> mode is set, the number in x-register will be considered in radians<br /> Notice: if number in x-register (x) is equal to +90 degrees or -90 degrees (+pi/2 or -pi/2 in radians) a warning is set in the information display and the operation is not done<br />
+   
+    <span class='cbj'>ATAN</span> for arctangent. The number in the x-register (x) is replaced by arcsinus(x). The result value will be in degrees if the <strong>DEG</strong> mode is set, in radians if the <strong>RAD</strong> mode is set.<br />
+    <br>
+
+    <span class='cb'>SQRT</span> for square root. The number in x-register (x) is replaced by square root(x).<br />Notice: if the number in x-register < 0, a warning is set in the information display and the operation is not done <br />
+    <span class='cbj'>x^2</span> for square. The number in x-register (x) is replaced by x squared.<br />Notice: if the results exceed the maximum number accepted by the calculator, which is 9.99999999 e+99, a warning is set in the information display and the operation is not done <br />   
+    <br>
+   <span class='cb'>+</span> for plus. The number in the x-register (x) is replaced by (x+y).The number in y-register (y) is replaced by the number in z-register. The number in z-register is set to 0<br/>
+   <span class='cb'>-</span> for minus. The number in the x-register (x) is replaced by (y-x). The number in y-register (y) is replaced by the number in z-register. The number in z-register is set to 0.  <br />
+   <span class='cb'>x</span> for multiplication. The number in x-register (x) is replaced by number in (x * y). The number in y-register (y) is replaced by the number in z-register. The number in z-register is set to 0.<br />Notice: if the results exceed the maximum number accepted by the calculator, which is 9.99999999 e+99, a warning is set in the information display and the operation is not done<br />
+   <span class='cb'>/</span> for division. The number in x-register (x) is replaced by (y/x). The number in the y-register (y) is replaced by the number in thr z-register. The number in z-register is set to 0. <br />Notice: if the number in x-register is equal to 0, a warning is set in the information display and the operation is not done<br />
+   <br>
+   
+</div>
+
+<div class='left'>
+  <h3>The white keys</h3>
+  <span class='cw'>0</span> to <span class='cw'>9</span></span> numbers<br />
+  <span class='cw'>.</span> decimal point<br />
+  <span class='cw'>-</span> minus sign, used to enter negative numbers or a negative exponent. Example : -123 or 456E-3. It should not be mixed with the mathematical operation minus (a blue key), which substact one number from an other one.<br />
+  <span class='cw'>E</span> exponent sign <br />
+  <span class='cw'>PI</span> enter the mathematical value Pi (3.14...) into the x-register<br />
+  <span class='cwr'>C</span> for clear. While keying a new number, remove the last entered sign from the x-register<br />
+</div>
+<br>
+Stk 21 by <a href="https://github.com/creations56">creations56</a>, v. 04/24
+</body>
+</html>
